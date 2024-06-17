@@ -1,5 +1,6 @@
 import React from 'react';
-import { TouchableOpacity, Text, StyleSheet } from 'react-native';
+import { TouchableOpacity, Text } from 'react-native';
+import styles from './style';
 
 const Button: React.FC<{ title: string; onPress: () => void }> = ({ title, onPress }) => {
   return (
@@ -8,18 +9,5 @@ const Button: React.FC<{ title: string; onPress: () => void }> = ({ title, onPre
     </TouchableOpacity>
   );
 };
-
-const styles = StyleSheet.create({
-  button: {
-    backgroundColor: '#4B0082',
-    padding: 10,
-    borderRadius: 5,
-    alignItems: 'center',
-  },
-  buttonText: {
-    color: '#000',
-    fontSize: 16,
-  },
-});
 
 export default Button;
